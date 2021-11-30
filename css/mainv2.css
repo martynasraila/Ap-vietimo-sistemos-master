@@ -1,0 +1,990 @@
+﻿.fp-tableCell {
+	width: 100vw;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	margin-top: 30px;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	background-color: black;
+}
+#myMenu {
+	height: 60px;
+	overflow: hidden;
+	background-color: black;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	/*max-width: 1200px;*/
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+	/*margin-bottom: 50px;*/
+	font-weight: 500;
+	color: #d1d1d1;
+	font-size: 1.1em;
+	z-index: 99;
+	text-decoration: none;
+	background-color: #0f0f0f;
+	opacity: 0.95;
+	-ms-flex-item-align: center;
+	    align-self: center;
+	width: 100%;
+}
+
+#myMenu a {
+	text-decoration: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #d1d1d1;
+	-ms-flex: 1 0 auto;
+	    -webkit-box-flex: 1;
+	        flex: 1 0 auto;
+	text-align: center;
+
+}
+#myMenu a:hover {
+	text-decoration: none;
+/*	border-right: 2px solid white;
+	border-left: 2px solid white;*/
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #232323;
+	background-color: #ead491;
+	-webkit-box-shadow: 0px 0px 25px #846f2f;
+	        box-shadow: 0px 0px 25px #846f2f;
+	-ms-flex: 1 0 auto;
+	    -webkit-box-flex: 1;
+	        flex: 1 0 auto;
+}
+#myMenu .active {
+		text-decoration: none;
+/*	border-right: 2px solid white;
+	border-left: 2px solid white;*/
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #e2e2e2;
+	background-color: #878787;
+	-ms-flex: 1 0 auto;
+	    -webkit-box-flex: 1;
+	        flex: 1 0 auto;
+}
+	#menuSymbol {
+  	display: none;
+}
+/*.menu a:nth-child(1) {
+    border-left: 1px solid #545454;
+}*/
+
+#fp-nav ul li, .fp-slidesNav ul li {
+	height: 20px;
+	width: 20px;
+}
+#fp-nav ul, .fp-slidesNav ul {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span
+{
+	height: 20px;
+	width: 20px;
+}
+
+
+.section {
+	color: #ead491;
+	border-bottom: 5px solid grey;
+}
+
+/*.fullpage {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}*/
+#pagrindinis {
+	background-color: black;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	height: 100vh;
+	background-image: url(../img/burbulasv2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;	
+}
+#prisistatymas {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+	width: 50%;
+    text-align: center;
+    height: 100%;
+}
+#pagrindinis .header {
+	font-weight: 700;
+	font-size: 250%;
+	/*width: 50%;*/
+	padding-bottom: 10px;
+	text-shadow: 0px 0px 50px #846f2f;
+}
+#pagrindinisPara {
+	padding-bottom: 60px !important;
+	font-size: 200% !important;
+}
+#pagrindinis .paragraph {
+	/*width: 50%;*/
+	font-weight: 500;
+	font-size: 150%;
+	text-shadow: 0px 0px 25px #846f2f;
+}
+#lastParagraph {
+	margin-bottom: 20vh;
+}
+#titulinis {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	padding-left: 15px;
+}
+#mygtukas {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-item-align: center;
+	    align-self: center;
+}
+.btn {
+	text-decoration: none;
+	height: 30px;
+	width: 300px;
+	border: 2px solid #ead491;
+	border-radius: 30px 30px 30px 30px;
+    vertical-align: middle;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 12px;
+    color: #ead491;
+}
+.btn:hover {
+	text-decoration: none;
+	height: 30px;
+	width: 300px;
+	border: 2px solid #ead491;
+	border-radius: 30px 30px 30px 30px;
+    vertical-align: middle;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 12px;
+    color: #ead491;
+    text-shadow: 0px 0px 30px #846f2f;
+    font-weight: 500;
+    font-size: 1.05em;
+    -webkit-box-shadow: 0px 0px 50px #846f2f;
+            box-shadow: 0px 0px 50px #846f2f;
+}
+
+
+/*#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+	background-color: yellow;
+	border: 2px solid black;
+	box-shadow: 0px 0px 20px #846f2f;
+	height: 30px;
+	width: 30px;
+	margin: 10px;
+} 
+
+
+/*#slides1 {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/burbulas.jpg);
+	background-size: cover;
+}*/
+#galerija {
+ 	/*background: #191919;  
+	background: -webkit-linear-gradient(to right, #232115, #191919);
+	background: linear-gradient(to right, #232115, #191919);*/
+	background: #190b01; 
+
+}
+#paveikslai {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+	margin: auto;
+
+	/*background-color: white;*/
+}
+.row {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+}
+#paveikslai a {
+	margin: 10px;
+	width: 20%;
+	height: auto;
+}
+#paveikslai img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 10px #232115;
+	        box-shadow: 0px 0px 10px #232115;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+#paveikslai:hover img{
+	opacity: .65;
+}
+#paveikslai img:hover {
+	opacity: 1;
+	-webkit-transform: scale(1) rotate(0deg);
+	        transform: scale(1) rotate(0deg);
+	height: auto;
+	-webkit-box-shadow: 0px 0px 20px #423d1e;
+	        box-shadow: 0px 0px 20px #423d1e;
+	height: 100%;
+	width: 100%;
+}
+
+/*-------------------------------------MODELIŲ CSS-------------------------------------*/
+#modeliai {
+	background: #190b01;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to left, #1F1C18, #3a1904);
+	background: linear-gradient(to left, #1F1C18, #3a1904);*/
+}
+#modeliuPsl {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	height: 100%;
+	width: 100%;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+
+}
+.modelis {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	background-color: #190b01;
+	-webkit-box-shadow: 0px 0px 40px #442411;
+	        box-shadow: 0px 0px 40px #442411;
+	margin: 6px;
+	margin-left: 10%;
+	margin-right: 10%;
+	/*justify-content: center;*/
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+
+}
+#modelis1 {
+	background-image: url("../img/modeliai1.jpg");
+}
+#modelis2 {
+	background-image: url("../img/modeliai2.jpg");
+}
+#modelis3 {
+	background-image: url("../img/modeliai3.jpg");
+}
+#modelis4 {
+	background-image: url("../img/modeliai4.jpg");
+}
+.modelis .pav {
+	background-size: cover;
+	background-position: center center;
+	margin: 10px;
+	height: 110px;
+	width: 130px;
+	margin-left: 5%;
+	margin-right: 3%;
+}
+
+.kainos {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	margin-left: 3%;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kainosRow {
+	border-bottom: 2px solid #ead491;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+}
+.pavHeader {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+}
+.dydis {
+	/*padding-left: 30px;*/
+	padding-right: 50px;
+}
+.kaina {
+	margin-left: auto;
+}
+.modelis .header {
+	margin: 3%;
+	width: 150px;
+}
+.description {
+	width: 300px;
+	padding: 10px;
+	margin-left: auto;
+}
+/*-------------------------------------GAMYBA CSS--------------------------------------*/
+#gamyba {
+	border-bottom: 5px solid grey;
+	background: #190b01;
+}
+#gamybosPsl {
+	max-height: 100%;
+	max-width: 100vw;
+	/*color: white;*/
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+}
+.column {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	/*display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-box;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;*/
+}
+.sekcija {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	width: 45vw;
+	margin: 6px;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+	background-color: #190b01;
+	-webkit-box-shadow: 0px 0px 40px #442411;
+	        box-shadow: 0px 0px 40px #442411;
+	margin: 6px;
+	max-height: 100%;
+	height: 100%;
+/*	display: -webkit-box;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;*/
+	/*display: inline-block;*/
+	/*-webkit-box-flex: 1;       iOS 6-, Safari 3.1-6 */
+    /*-moz-box-flex: 1;         /* Firefox 19- */
+    /*-webkit-flex: 1;          /* Chrome */
+    /*-ms-flex: 1;              /* IE 10 */
+    /*flex: 1;                   Opera 12.1, Firefox 20+ */
+}
+.sekcija img {
+	min-height: 1px;
+	width: 35%;
+	height: auto;
+	max-height: 100%;
+	/*background-image: url(../img/picture2-1080blur.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;*/
+
+}
+.tekstas {
+	display:-ms-flexbox;
+	display:-webkit-box;
+	display:flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 63%
+}
+.paragraph {
+	font-weight: 400;
+	font-size: 0.9em;
+	margin: 2px;
+}
+.header {
+	margin: 2px;
+	font-weight: 700;
+}
+/*#modeliai {
+	height: 100vh;
+}
+#uzsakymai {
+	height: 100vh;
+	border-bottom: 10px solid grey;
+}*/
+#backgroundImage {
+
+}
+#contactPage {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: black;
+	background-image: url(../img/picture2-1080.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 10;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	        flex-direction:column;
+}
+#contactInfo {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+	margin-bottom: auto;
+}
+span {
+	color:inherit;
+    text-decoration:none;
+}
+#forma {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	width: 40%;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	padding: 30px;
+	margin:auto;
+}
+#formData {
+	width: 90%;
+}
+form {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+	width: 90%;
+	margin: auto;
+}
+input {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	width: 90%;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #bababa;
+}
+textarea {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	width: 90%;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #bababa;
+}
+
+#formData button {
+	text-decoration: none;
+	height: 40px;
+	width: 90%;
+	border: 2px solid #ead491;
+	border-radius: 30px 30px 30px 30px;
+    vertical-align: middle;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #ead491;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+#formData button:hover {
+	border: 2px solid #ead491;
+	border-radius: 30px 30px 30px 30px;
+    text-shadow: 0px 0px 30px #846f2f;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 50px #846f2f;
+            box-shadow: 0px 0px 50px #846f2f;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #3a3a3a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #3a3a3a;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #3a3a3a;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #3a3a3a;
+}
+#rekvizitai {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	width: 40%;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	padding: 30px;
+	margin: auto;
+}
+#rekvizitai h2 {
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+}
+#formAndContacts {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction:row;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	        flex-direction:row;
+	-ms-flex-wrap: wrap-reverse;
+	    flex-wrap: wrap-reverse;
+	margin-bottom: auto;
+}
+.contactElements {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	padding: 10px;
+}
+#phoneAndEmail {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+#sekite {
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+}
+#icons {
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	margin-left: 15px;
+}
+/*-----------------------------------------Media query--------------------------------*/
+@media (max-width: 1700px) {
+.sekcija img {
+	min-height: 1px;
+	width: 30%;
+	height: auto;
+	max-height: 100%;
+	/*background-image: url(../img/picture2-1080blur.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;*/
+}
+.tekstas {
+	width: 67%;
+}
+.sekcija {
+	width: 46vw;
+}
+}
+
+@media (max-width: 900px) {
+	
+	.row {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+#paveikslai img {
+	width: 100%;
+	height: 100%;
+}
+#galerija a {
+	width: 40vw;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+.modelis .header {
+	text-align: center;
+}
+.pavHeader {
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+	-ms-flex-align:center;
+	    -webkit-box-align:center;
+	        align-items:center;
+	padding: 10px;
+}
+
+.sekcija {
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	width: 80vw;
+	height: auto;
+}
+.column {
+	display: -webkit-inline-box;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-box;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+ #forma {
+  	width: 100%;
+  	text-align: center;
+  }
+  #rekvizitai {
+  	width: 100%;
+  }
+   #phoneAndEmail {
+  	-ms-flex-pack: center;
+  	    -webkit-box-pack: center;
+  	        justify-content: center;
+  }
+  #pagrindinis {
+  	background-position: center;
+  }
+}
+@media (max-width: 600px) {
+  
+  #pagrindinis {
+  	background-color: #000000;
+  	background-image: url(../img/burbulasphone.jpg);
+  	background-position: center 60px;
+  	background-size: cover;
+  	z-index: -1;
+  	 /*background-image: url("img/burbulasphone.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center top;
+    /*background-attachment: fixed;*/
+    background-width: 100% auto;
+    
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+  	background-attachment: scroll;
+  }
+  #myMenu {
+  	-ms-flex-direction: column;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	        flex-direction: column;
+  	height: auto;
+  }
+  #myMenu a {
+  	width: 100%;
+  	padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #myMenu a:hover {
+  	padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #myMenu .active {
+  	padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .menuItem {
+  	display: none;
+  }
+#menuSymbol {
+  	display: block;
+  	font-size: 2em;
+}
+  #prisistatymas {
+  	width: 100%;
+  }
+  #titulinis {
+  	margin-bottom: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+  }
+  #titulinis .header {
+  	padding-top: 10px;
+  	padding-bottom: 20px;
+}
+  #titulinis .paragraph {
+  	margin: 0;
+  	padding: 10px;
+  }
+  #mygtukas {
+  	padding: 15px;
+  }
+  #mygtukas .btn {
+  	background-color: black;
+  	opacity: 0.8;
+  }
+.row {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+#paveikslai img {
+	width: 100%;
+	height: 100%;
+}
+#galerija a {
+	width: 45vw;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+.modelis {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.column {
+	display: -webkit-inline-box;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-box;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sekcija {
+	display: -webkit-box;
+	display: -webkit-inline-box;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	/*display: inline-block;*/
+	-webkit-box-flex: 1;      /* iOS 6-, Safari 3.1-6 */         /* Firefox 19- */          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;                  /* Opera 12.1, Firefox 20+ */
+	width: 94vw;
+	-ms-flex: 1 0 auto !important;
+	    flex: 1 0 auto !important;
+
+}
+.sekcija img {
+	width: 45%;
+	margin-left: 5px;
+}
+.pavHeader {
+	padding: 0;
+}
+.modelis .pav {
+	margin: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 10px;
+}
+.dydis {
+/*	margin-left: 0;*/
+	padding: 0;
+	width: 80px;
+	margin: 0;
+	margin-right: 10px;
+}
+.tekstas {
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.kaina {
+/*	margin-right: auto;*/
+}
+.kainosRow {
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	        align-items: center;
+}
+.description {
+	display: none;
+}
+  #contactInfo {
+  	text-align: center;
+  }
+  #forma {
+  	width: 100%;
+  	text-align: center;
+  }
+  #rekvizitai {
+  	width: 100%;
+  }
+  #adresai h4 {
+  	-ms-flex-item-align: center;
+  	    -ms-grid-row-align: center;
+  	    align-self: center;
+  }
+  #sekite {
+  	margin: auto;
+  }
+
+}
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+	#mygtukas {
+		display: none;
+	}
+}
