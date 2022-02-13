@@ -1,396 +1,575 @@
 <!DOCTYPE html>
 
 <html lang="lt">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8" />
 
-  <title>Lauko žibintai - šviestuvai | iGAAM</title>
-  <meta name="description" content="Išskirtiniai eksterjero - interjero apšvietimo sprendimai. Susikurkite savo individualią aplinką. Pabrėžkite savo išskirtinumą!" />
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<title>Lauko žibintai - šviestuvai | iGAAM</title>
+		<meta
+			name="description"
+			content="Išskirtiniai eksterjero - interjero apšvietimo sprendimai. Susikurkite savo individualią aplinką. Pabrėžkite savo išskirtinumą!"
+		/>
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <link rel="stylesheet" href="css/normalize.css">
-<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="width = device-width, initial-scale = 1" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<meta name="format-detection" content="telephone=no" />
 
-<link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-<script src="./js/fullpage.extensions.min.js"></script>
-<script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+		<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
+		<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+		<script type='text/javascript'>
+			
+		<link
+			href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css"
+			rel="stylesheet"
+		/>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+		<script src="./js/fullpage.extensions.min.js"></script>
+		<script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
 
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<link rel="stylesheet" href="css/lightbox.css">
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 
-    <script type="text/javascript">
-		$(document).ready(function() {
-		    $('#fullpage').fullpage({
-		    	// anchors: ['pagrindinis', 'galerija', 'modeliai', 'gamyba', 'kontaktai'],
-		    	menu: '#myMenu',
-		    	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
-				scrollingSpeed: 1000,
-				paddingTop: '60px',
-		        //design
-		        
-		        // dragAndMove: true,
-		        controlArrows: false,
-		        // slideSelector: '.slide',
-		        animateAnchor: true,
-		        // faddingEffect:'slides'
-		        responsiveWidth: 1000,
-		        responsiveHeight: 600,
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#fullpage").fullpage({
+					// anchors: ['pagrindinis', 'galerija', 'modeliai', 'gamyba', 'kontaktai'],
+					menu: "#myMenu",
+					anchors: [
+						"firstPage",
+						"secondPage",
+						"thirdPage",
+						"fourthPage",
+						"fifthPage",
+					],
+					scrollingSpeed: 1000,
+					paddingTop: "60px",
+					//design
 
-		        afterRender: function () {
-	            	setInterval(function () {
-	                $.fn.fullpage.moveSlideRight();
-	            	}, 7000);
-        		}
+					// dragAndMove: true,
+					controlArrows: false,
+					// slideSelector: '.slide',
+					animateAnchor: true,
+					// faddingEffect:'slides'
+					responsiveWidth: 1000,
+					responsiveHeight: 600,
 
-		    });
-		});
-    </script>
-    <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'showImageNumberLabel': false,
-      'positionFromTop': 50
-    })
-</script>
+					afterRender: function () {
+						setInterval(function () {
+							$.fn.fullpage.moveSlideRight();
+						}, 7000);
+					},
+				});
+			});
+		</script>
+		<script>
+			lightbox.option({
+				resizeDuration: 200,
+				wrapAround: true,
+				showImageNumberLabel: false,
+				positionFromTop: 50,
+			});
+		</script>
 
-  <link rel="stylesheet" href="css/mainv2.css">
-  <!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/mainv2.css" />
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=latin-ext"
+			rel="stylesheet"
+		/>
+	</head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=latin-ext" rel="stylesheet">
-</head>
-
-<body>
-
+	<body>
 		<div id="menu">
 			<!-- <a href="#" id="menuIcon"><img src="img/menuIcon.png" width="30px" height="30px"></a> -->
-			
+
 			<div id="myMenu">
-			<a href="#" id="menuSymbol">☰</a>
-			<a data-menuanchor="firstPage"  class="active menuItem" href="#firstPage">Pagrindinis</a>
-			<a data-menuanchor="secondPage" class="menuItem" href="#secondPage">Galerija</a>
-			<a data-menuanchor="thirdPage"  class="menuItem" href="#thirdPage">Modeliai</a>
-			<a data-menuanchor="fourthPage" class="menuItem" href="#fourthPage">Gamyba</a>
-			<a data-menuanchor="fifthPage" class="menuItem" href="#fifthPage">Kontaktai</a>
-		</div>
-			
-		</div>
-	<div id="fullpage">
-
-		<div class="section" id="pagrindinis">
-			<div id="prisistatymas">
-				<div id="titulinis">
-				<span class="header">iGAAM</span>
-				<span id="pagrindinisPara" class="header">Lauko - vidaus žibintai</span>
-				<span class="paragraph">Norintiems išskirtinių namų.</span>
-				<span class="paragraph">Galintiems džiaugtis individualumu.</span>
-				<span id="lastParagraph" 
-				class="paragraph">Pasiryžusiems nustebinti visus.</span>
-				</div>
-				<div id="mygtukas">
-				<a href="#secondPage" class="btn" id="suzinotiDaugiau">Sužinoti daugiau</a>
-			</div>
-			</div>	
-		</div>
-
-		<div class="section" id="galerija">
-			
-			<div id="paveikslai">
-			<div class="row">
-		 		<a data-lightbox="gallery" href="img/outdoorlights1.jpg"><img class="image" id="image3" src="img/outdoorlights1.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights2.jpg"><img class="image" id="image3" src="img/outdoorlights2.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights3.jpg"><img class="image" id="image3" src="img/outdoorlights3.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights4.jpg"><img class="image" id="image3" src="img/outdoorlights4.jpg" alt="Žibintas" ></a>
-	 		</div>
-	 		<div class="row">
-		 		<a data-lightbox="gallery" href="img/outdoorlights5.jpg"><img class="image" id="image3" src="img/outdoorlights5.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights6.jpg"><img class="image" id="image3" src="img/outdoorlights6.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights7.jpg"><img class="image" id="image3" src="img/outdoorlights7.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights8.jpg"><img class="image" id="image3" src="img/outdoorlights8.jpg" alt="Žibintas" ></a>
-	 		</div>
-	 		<div class="row">
-		 		<a data-lightbox="gallery" href="img/outdoorlights9.jpg"><img class="image" id="image3" src="img/outdoorlights9.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights10.jpg"><img class="image" id="image3" src="img/outdoorlights10.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights11.jpg"><img class="image" id="image3" src="img/outdoorlights11.jpg" alt="Žibintas" ></a>
-		 		<a data-lightbox="gallery" href="img/outdoorlights12.jpg"><img class="image" id="image3" src="img/outdoorlights12.jpg" alt="Žibintas" ></a>
-	 		</div>
- 		</div>
-
-
-		</div>
-
-		<div class="section" id="modeliai">
-			<div id="modeliuPsl">
-			<div class="modelis" id="apvalus">
-				<div class="pavHeader">
-				<div id="modelis1" class="pav">
-					
-				</div>
-				<div class="header">
-					<h2>Apvalus</h2>
-				</div>
-				</div>
-				<div class="kainos">
-					<div class="kainosRow">
-					<span class="dydis">50 cm</span>
-					<span class="kaina">175€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">75 cm</span>
-					<span class="kaina">240€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">100 cm</span>
-					<span class="kaina">580€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">125 cm</span>
-					<span class="kaina">800€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">&#60;125 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-				</div>
-				<div class="description">
-					<span>*Kaina gali keistis priklausomai nuo pasirinktos spalvos, pristatymo sąlygų ir papildomai galimų atlikti darbų.</span>
-				</div> 
-			</div>		
-			<div class="modelis" id="kubas">
-				<div class="pavHeader">
-				<div id="modelis2" class="pav">
-					
-				</div>
-				<div class="header">
-					<h2>Kubas</h2>
-				</div>
-			</div>
-				<div class="kainos">
-					<div class="kainosRow">
-					<span class="dydis">50 cm</span>
-					<span class="kaina">150€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">75 cm</span>
-					<span class="kaina">230€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">100 cm</span>
-					<span class="kaina">580€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">125 cm</span>
-					<span class="kaina">800€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">&#60;125 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-				</div>
-				<div class="description">
-					<span>*Kaina gali keistis priklausomai nuo pasirinktos spalvos, pristatymo sąlygų ir papildomai galimų atlikti darbų.</span>
-				</div> 
-			</div>	
-			<div class="modelis" id="staciakampis">
-				<div class="pavHeader">
-				<div id="modelis3" class="pav">
-					
-				</div>
-				<div class="header">
-					<h2>Cilindras</h2>
-				</div>
-				</div>
-				<div class="kainos">
-					<div class="kainosRow">
-					<span class="dydis">50 cm</span>
-					<span class="kaina">100€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">75 cm</span>
-					<span class="kaina">150€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">100 cm</span>
-					<span class="kaina">320€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">125 cm</span>
-					<span class="kaina">400€* su PVM</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">&#60;125 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-				</div>
-				<div class="description">
-					<span>*Kaina gali keistis priklausomai nuo pasirinktos spalvos, pristatymo sąlygų ir papildomai galimų atlikti darbų.</span>
-				</div> 
-			</div>
-			<div class="modelis" id="ritinys">
-				<div class="pavHeader">
-				<div id="modelis4"  class="pav">
-					
-				</div>
-				<div class="header">
-					<h2>Kita forma</h2>
-				</div>
-				</div>
-				<div class="kainos">
-					<div class="kainosRow">
-					<span class="dydis">50 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">75 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">100 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">125 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-					<div class="kainosRow">
-					<span class="dydis">&#60;125 cm</span>
-					<span class="kaina">Kaina sutartinė*</span>
-					</div>
-				</div>
-				<div class="description">
-					<span>*Kaina  priklauso nuo pasirinktos figūros – kuo sudėtingesne geometrinė figūra, tuo daugiau medžiagų ir darbo valandų bus išskirta gamybai.</span>
-				</div> 
-		</div>
-
-		</div>
-	</div>
-
-		<div class="section" id="gamyba">
-			<div id="gamybosPsl">
-				<div class="column">
-			<div class="sekcija">
-					<img src="img/gamyba1.jpg">
-				<div class="tekstas">
-					<span class="header">Mažoji kalvystė</span>
-					<span class="paragraph">Nors šiandien fabrikuose įdiegti moderniausi gamybos įrenginiai ir pritaikytos naujausios technologijos, tačiau ten pagaminti daiktai neturi „sielos“. Mūsų gaminiai 100 % rankų darbo gamybos, todėl yra išskirtiniai - dviejų vienodų neįmanoma rasti.</span>
-				</div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba2.jpg">
-				<div class="tekstas">
-				<span class="header">Žibinto spalva</span>
-					<span class="paragraph">Išskirtinė galimybė pasirinkti Jūsų pageidaujamą produkto spalvą. Rekomenduojama spalva įvairaus atspalvio šviesi - tai suteikia žibintui išskirtinumą dienos metu. Standartine spalva – balta.</span></div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba3.jpg">
-				<div class="tekstas">
-				<span class="header">Apšvietimas</span>
-					<span class="paragraph">Naudojame tik patikimų gamintojų LED lemputes, todėl žibintas Jums švies ilgai ir kaskart taupys elektros energiją. Tarnavimo laikas iki 85 000 val. 2-12V saugus maitinimas. Aukščiausias  IP (International Protection marking) 68 standartas. Yra galimybė pasirinkti apšvietimo spalvą.</span></div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba4.jpg">
-				<div class="tekstas">
-				<span class="header">Medžiagos</span>
-					<span class="paragraph">Žibintas pagamintas iš gryno metalo, kuris padengtas atmosferai atsparia medžiaga, todėl konstrukcijai yra suteikiama net 10 metų garantija. Mūsų gaminys nuolat veikiamas saulės UV, rūgštaus lietaus ir kitų atmosferinių kritulių, todėl tarnaus minimaliai 20-30 metų.</span></div>
+				<a href="#" id="menuSymbol">☰</a>
+				<a data-menuanchor="firstPage" class="active menuItem" href="#firstPage"
+					>Pagrindinis</a
+				>
+				<a data-menuanchor="secondPage" class="menuItem" href="#secondPage"
+					>Galerija</a
+				>
+				<a data-menuanchor="thirdPage" class="menuItem" href="#thirdPage"
+					>Modeliai</a
+				>
+				<a data-menuanchor="fourthPage" class="menuItem" href="#fourthPage"
+					>Gamyba</a
+				>
+				<a data-menuanchor="fifthPage" class="menuItem" href="#fifthPage"
+					>Kontaktai</a
+				>
 			</div>
 		</div>
-		<div class="column">
-			<div class="sekcija">
-				<img src="img/gamyba5.jpg">
-				<div class="tekstas">
-				<span class="header">Gamyba</span>
-					<span class="paragraph">Mūsų produktai gaminami Europos Sąjungoje – jokių „Made in China“. Visos medžiagos įsigyjamos Europoje, todėl atitinka vienus iš aukščiausių standartų. Galime pasigirti – produktas į Lietuvą nėra atvežtinis, jis daugumos nuostabai, gaminamas Lietuvoje. Pirkdami mūsų produktą, palaikysite savo kraštą.</span></div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba6.jpg">
-				<div class="tekstas">
-				<span class="header">Užsakymas</span>
-					<span class="paragraph">Norintys įsigyti mūsų prekių, turėtų informuoti apie tai pardavėją telefonu arba el.paštu. Užsakyme turėtų būti nurodyta, kokios prekės užsakomos, vardas, kontaktinis telefonas ir elektroninis paštas. Gavę užsakymą, Jums išsiųsime užsakymo patvirtinimą.</span></div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba7.jpg">
-				<div class="tekstas"><span class="header">Pristatymas</span>
-					<span class="paragraph">Venipak – patikimas ir greitas prekių pristatymas Lietuvoje ir už jos ribų. Užsakytos prekės bus pristatytos Jūsų nurodytu adresu, Jums patogiu laiku. Už prekes galite sumokėti grynaisiais (kurjeriui atvežus prekę į namus) ar pavedimu. Tam tikrais atvejais, kai siunta labai didelė, prekes pristatys mūsų darbuotojai.</span>
+		<div id="fullpage">
+			<div class="section" id="pagrindinis">
+				<div id="prisistatymas">
+					<div id="titulinis">
+						<span class="header">iGAAM</span>
+						<span id="pagrindinisPara" class="header"
+							>Lauko - vidaus žibintai</span
+						>
+						<span class="paragraph">Norintiems išskirtinių namų.</span>
+						<span class="paragraph">Galintiems džiaugtis individualumu.</span>
+						<span id="lastParagraph" class="paragraph"
+							>Pasiryžusiems nustebinti visus.</span
+						>
+					</div>
+					<div id="mygtukas">
+						<a href="#secondPage" class="btn" id="suzinotiDaugiau"
+							>Sužinoti daugiau</a
+						>
+					</div>
 				</div>
-			</div>
-			<div class="sekcija">
-				<img src="img/gamyba8.jpg">
-				<div class="tekstas">
-				<span class="header">Užsakymo trukmė</span>
-					<span class="paragraph">Prekės, kurios yra mūsų įmonės sandėlyje bus pristatytos per 2-3 darbo dienas. Užsakomos prekės gali būti pristatytos per ilgesnį laikotarpį (sąlygos aptariamos su pardavėju pateikiant užsakymą). Užsakytos prekės rezervuojamos trijų dienų laikotarpiui.</span>
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-		<div class="section" id="kontaktai">
-			
-		<div id="contactPage">
-		<div id="contactInfo">
-			<h1>Susisiekite</h1>
-			<span>Norėdami užsisakyti ar sužinoti daugiau informacijos - susisiekite!</span>
-		</div>
-		<div id="formAndContacts">
-		<div id="forma">
-			<h2>Parašykite mums žinutę!</h2>
-			<div id="formData">
-				<form method="POST" action="http://formspree.io/railamartynas@gmail.com">
- 				<input pattern="[a-zA-Z]{3,}" required title="Blablalba" type="text" name="name" placeholder="Jūsų vardas" >
-				<input type="email" name="email" placeholder="Elektroninis Paštas">
-				<input type="number" name="phone" placeholder="Telefonas">
-				<textarea name="message" placeholder="Jūsų žinutė"></textarea>
-
-				<button type="submit">Siųsti</button>
-				<input type="hidden" name="_next" value="//sviesuliai.ml/index.html" />
-				<input type="text" name="_gotcha" style="display:none" />
-				</form>
 			</div>
 
+			<div class="section" id="galerija">
+				<div id="paveikslai">
+					<div class="row">
+						<a data-lightbox="gallery" href="img/outdoorlights1.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights1.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights2.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights2.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights3.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights3.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights4.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights4.jpg"
+								alt="Žibintas"
+						/></a>
+					</div>
+					<div class="row">
+						<a data-lightbox="gallery" href="img/outdoorlights5.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights5.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights6.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights6.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights7.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights7.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights8.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights8.jpg"
+								alt="Žibintas"
+						/></a>
+					</div>
+					<div class="row">
+						<a data-lightbox="gallery" href="img/outdoorlights9.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights9.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights10.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights10.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights11.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights11.jpg"
+								alt="Žibintas"
+						/></a>
+						<a data-lightbox="gallery" href="img/outdoorlights12.jpg"
+							><img
+								class="image"
+								id="image3"
+								src="img/outdoorlights12.jpg"
+								alt="Žibintas"
+						/></a>
+					</div>
+				</div>
+			</div>
 
+			<div class="section" id="modeliai">
+				<div id="modeliuPsl">
+					<div class="modelis" id="apvalus">
+						<div class="pavHeader">
+							<div id="modelis1" class="pav"></div>
+							<div class="header">
+								<h2>Apvalus</h2>
+							</div>
+						</div>
+						<div class="kainos">
+							<div class="kainosRow">
+								<span class="dydis">50 cm</span>
+								<span class="kaina">175€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">75 cm</span>
+								<span class="kaina">240€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">100 cm</span>
+								<span class="kaina">580€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">125 cm</span>
+								<span class="kaina">800€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">&#60;125 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+						</div>
+						<div class="description">
+							<span
+								>*Kaina gali keistis priklausomai nuo pasirinktos spalvos,
+								pristatymo sąlygų ir papildomai galimų atlikti darbų.</span
+							>
+						</div>
+					</div>
+					<div class="modelis" id="kubas">
+						<div class="pavHeader">
+							<div id="modelis2" class="pav"></div>
+							<div class="header">
+								<h2>Kubas</h2>
+							</div>
+						</div>
+						<div class="kainos">
+							<div class="kainosRow">
+								<span class="dydis">50 cm</span>
+								<span class="kaina">150€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">75 cm</span>
+								<span class="kaina">230€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">100 cm</span>
+								<span class="kaina">580€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">125 cm</span>
+								<span class="kaina">800€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">&#60;125 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+						</div>
+						<div class="description">
+							<span
+								>*Kaina gali keistis priklausomai nuo pasirinktos spalvos,
+								pristatymo sąlygų ir papildomai galimų atlikti darbų.</span
+							>
+						</div>
+					</div>
+					<div class="modelis" id="staciakampis">
+						<div class="pavHeader">
+							<div id="modelis3" class="pav"></div>
+							<div class="header">
+								<h2>Cilindras</h2>
+							</div>
+						</div>
+						<div class="kainos">
+							<div class="kainosRow">
+								<span class="dydis">50 cm</span>
+								<span class="kaina">100€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">75 cm</span>
+								<span class="kaina">150€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">100 cm</span>
+								<span class="kaina">320€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">125 cm</span>
+								<span class="kaina">400€* su PVM</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">&#60;125 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+						</div>
+						<div class="description">
+							<span
+								>*Kaina gali keistis priklausomai nuo pasirinktos spalvos,
+								pristatymo sąlygų ir papildomai galimų atlikti darbų.</span
+							>
+						</div>
+					</div>
+					<div class="modelis" id="ritinys">
+						<div class="pavHeader">
+							<div id="modelis4" class="pav"></div>
+							<div class="header">
+								<h2>Kita forma</h2>
+							</div>
+						</div>
+						<div class="kainos">
+							<div class="kainosRow">
+								<span class="dydis">50 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">75 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">100 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">125 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+							<div class="kainosRow">
+								<span class="dydis">&#60;125 cm</span>
+								<span class="kaina">Kaina sutartinė*</span>
+							</div>
+						</div>
+						<div class="description">
+							<span
+								>*Kaina priklauso nuo pasirinktos figūros – kuo sudėtingesne
+								geometrinė figūra, tuo daugiau medžiagų ir darbo valandų bus
+								išskirta gamybai.</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		</div>
-		<div id="rekvizitai">
-			<h2>Kontaktai</h2>
-			<div id="phoneAndEmail">
-			<div class="contactElements">
-				<h4>Telefonas</h4>
-				<span>+37067477794</span>
-				<span>+37067477735</span>
+			<div class="section" id="gamyba">
+				<div id="gamybosPsl">
+					<div class="column">
+						<div class="sekcija">
+							<img src="img/gamyba1.jpg" />
+							<div class="tekstas">
+								<span class="header">Mažoji kalvystė</span>
+								<span class="paragraph"
+									>Nors šiandien fabrikuose įdiegti moderniausi gamybos
+									įrenginiai ir pritaikytos naujausios technologijos, tačiau ten
+									pagaminti daiktai neturi „sielos“. Mūsų gaminiai 100 % rankų
+									darbo gamybos, todėl yra išskirtiniai - dviejų vienodų
+									neįmanoma rasti.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba2.jpg" />
+							<div class="tekstas">
+								<span class="header">Žibinto spalva</span>
+								<span class="paragraph"
+									>Išskirtinė galimybė pasirinkti Jūsų pageidaujamą produkto
+									spalvą. Rekomenduojama spalva įvairaus atspalvio šviesi - tai
+									suteikia žibintui išskirtinumą dienos metu. Standartine spalva
+									– balta.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba3.jpg" />
+							<div class="tekstas">
+								<span class="header">Apšvietimas</span>
+								<span class="paragraph"
+									>Naudojame tik patikimų gamintojų LED lemputes, todėl žibintas
+									Jums švies ilgai ir kaskart taupys elektros energiją.
+									Tarnavimo laikas iki 85 000 val. 2-12V saugus maitinimas.
+									Aukščiausias IP (International Protection marking) 68
+									standartas. Yra galimybė pasirinkti apšvietimo spalvą.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba4.jpg" />
+							<div class="tekstas">
+								<span class="header">Medžiagos</span>
+								<span class="paragraph"
+									>Žibintas pagamintas iš gryno metalo, kuris padengtas
+									atmosferai atsparia medžiaga, todėl konstrukcijai yra
+									suteikiama net 10 metų garantija. Mūsų gaminys nuolat
+									veikiamas saulės UV, rūgštaus lietaus ir kitų atmosferinių
+									kritulių, todėl tarnaus minimaliai 20-30 metų.</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="sekcija">
+							<img src="img/gamyba5.jpg" />
+							<div class="tekstas">
+								<span class="header">Gamyba</span>
+								<span class="paragraph"
+									>Mūsų produktai gaminami Europos Sąjungoje – jokių „Made in
+									China“. Visos medžiagos įsigyjamos Europoje, todėl atitinka
+									vienus iš aukščiausių standartų. Galime pasigirti – produktas
+									į Lietuvą nėra atvežtinis, jis daugumos nuostabai, gaminamas
+									Lietuvoje. Pirkdami mūsų produktą, palaikysite savo
+									kraštą.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba6.jpg" />
+							<div class="tekstas">
+								<span class="header">Užsakymas</span>
+								<span class="paragraph"
+									>Norintys įsigyti mūsų prekių, turėtų informuoti apie tai
+									pardavėją telefonu arba el.paštu. Užsakyme turėtų būti
+									nurodyta, kokios prekės užsakomos, vardas, kontaktinis
+									telefonas ir elektroninis paštas. Gavę užsakymą, Jums
+									išsiųsime užsakymo patvirtinimą.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba7.jpg" />
+							<div class="tekstas">
+								<span class="header">Pristatymas</span>
+								<span class="paragraph"
+									>Venipak – patikimas ir greitas prekių pristatymas Lietuvoje
+									ir už jos ribų. Užsakytos prekės bus pristatytos Jūsų nurodytu
+									adresu, Jums patogiu laiku. Už prekes galite sumokėti
+									grynaisiais (kurjeriui atvežus prekę į namus) ar pavedimu. Tam
+									tikrais atvejais, kai siunta labai didelė, prekes pristatys
+									mūsų darbuotojai.</span
+								>
+							</div>
+						</div>
+						<div class="sekcija">
+							<img src="img/gamyba8.jpg" />
+							<div class="tekstas">
+								<span class="header">Užsakymo trukmė</span>
+								<span class="paragraph"
+									>Prekės, kurios yra mūsų įmonės sandėlyje bus pristatytos per
+									2-3 darbo dienas. Užsakomos prekės gali būti pristatytos per
+									ilgesnį laikotarpį (sąlygos aptariamos su pardavėju pateikiant
+									užsakymą). Užsakytos prekės rezervuojamos trijų dienų
+									laikotarpiui.</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="contactElements">
-				<h4>Elektroninis paštas</h4>
-				<span>info@laukozibintai.lt</span>
-				<span>info@skaineta.eu</span>
-			</div>
-		</div>
-			<div class="contactElements" id="adresai">
-				<h4>Rekvizitai</h4>
-				<span>Įmonė: IĮ Skaineta</span>
-				<span>Įmonės kodas: 300668732</span>
-				<span>PVM mokėtojo kodas: LT100003689413</span>
-				<span>Atsiskaitomoji sąskaita: Nr. LT95 7300 0101 0055 8925</span>
-				<span>AB bankas SWEDBANK, Banko kodas: BIC - HABALT22</span>
-			</div>
-			<div id="sekite" class="contactElements">
-				<h4>Sekite mus!</h4>
-				<div id="icons">
-				<a href="https://www.facebook.com/lightbubbles/"><img src="img/facebook.png" width="50px" height="50px"></a>
-				<span><img src="img/instagram.png" width="50px" height="50px"></span>
+			<div class="section" id="kontaktai">
+				<div id="contactPage">
+					<div id="contactInfo">
+						<h1>Susisiekite</h1>
+						<span
+							>Norėdami užsisakyti ar sužinoti daugiau informacijos -
+							susisiekite!</span
+						>
+					</div>
+					<div id="formAndContacts">
+						<div id="forma">
+							<h2>Parašykite mums žinutę!</h2>
+							<div id="formData">
+								<form
+									method="POST"
+									action="http://formspree.io/railamartynas@gmail.com"
+								>
+									<input
+										pattern="[a-zA-Z]{3,}"
+										required
+										title="Blablalba"
+										type="text"
+										name="name"
+										placeholder="Jūsų vardas"
+									/>
+									<input
+										type="email"
+										name="email"
+										placeholder="Elektroninis Paštas"
+									/>
+									<input type="number" name="phone" placeholder="Telefonas" />
+									<textarea name="message" placeholder="Jūsų žinutė"></textarea>
+
+									<button type="submit">Siųsti</button>
+									<input
+										type="hidden"
+										name="_next"
+										value="//sviesuliai.ml/index.html"
+									/>
+									<input type="text" name="_gotcha" style="display: none" />
+								</form>
+							</div>
+						</div>
+						<div id="rekvizitai">
+							<h2>Kontaktai</h2>
+							<div id="phoneAndEmail">
+								<div class="contactElements">
+									<h4>Telefonas</h4>
+									<span>+37067477794</span>
+									<span>+37067477735</span>
+								</div>
+								<div class="contactElements">
+									<h4>Elektroninis paštas</h4>
+									<span>info@laukozibintai.lt</span>
+									<span>info@skaineta.eu</span>
+								</div>
+							</div>
+							<div class="contactElements" id="adresai">
+								<h4>Rekvizitai</h4>
+								<span>Įmonė: IĮ Skaineta</span>
+								<span>Įmonės kodas: 300668732</span>
+								<span>PVM mokėtojo kodas: LT100003689413</span>
+								<span
+									>Atsiskaitomoji sąskaita: Nr. LT95 7300 0101 0055 8925</span
+								>
+								<span>AB bankas SWEDBANK, Banko kodas: BIC - HABALT22</span>
+							</div>
+							<div id="sekite" class="contactElements">
+								<h4>Sekite mus!</h4>
+								<div id="icons">
+									<a href="https://www.facebook.com/lightbubbles/"
+										><img src="img/facebook.png" width="50px" height="50px"
+									/></a>
+									<span
+										><img src="img/instagram.png" width="50px" height="50px"
+									/></span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		</div>
-
-		</div>
-	</div>
-</div>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-</body>
+		
+	</body>
 </html>
